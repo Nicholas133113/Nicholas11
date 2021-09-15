@@ -109,21 +109,12 @@ def task_list_exit():
         print('Досвидания дорогой пользователь! Возвращайтесь скорее!')
         exit()
 
-def print_filter_task():
-    def iterator_func(x):
-        for v in x.choices():
-            i=0
-            if print_update_task_list_is_done in v:
-                print(print_filter_task(print_update_task_list_is_done))
-
-
 choices = {
     "1": print_add_task_list,
     "2": print_task_list,
     "3": print_update_task_list_text,
     "4": print_update_task_list_is_done,
     "5": print_delete_task_list,
-    "6": print_filter_task,
     "0": task_list_exit
 }
 
@@ -134,7 +125,6 @@ menu = """
 3. Обновить задачу
 4. Отметить задачу
 5. Удалить задачу
-6. Только выполненные задачи
 0. Выйти
 """
 
